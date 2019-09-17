@@ -1,0 +1,142 @@
+html {
+    background-color: white; 
+    font-size: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 900px;
+}
+
+/*header*/
+
+header{
+    width: 50%;
+    padding: 0px 225px;
+}
+
+.page-title { 
+    padding-bottom: 3px;
+    border-bottom: 3px solid rgb(52, 192, 52);
+    text-align: center;
+}
+
+.page-welcome {
+    text-align: center;
+    margin: 22px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/*main*/
+
+.image {
+    display: flex;
+    flex-flow: row;
+    justify-content: center; 
+    width: 100%;
+    height: auto;
+    margin: 22px 0px;
+}
+
+.red-boxes {
+    display: flex;
+    flex-flow: row;
+}
+
+
+.about-me {
+    display: flex;
+    flex-flow: column wrap; 
+    border: 5px solid rgb(192, 41, 41);
+    border-right: 5px;
+    width: 50%;
+    margin: 0px 0px 0px 100px; 
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.little-title {
+    text-align: center;
+    margin-top: 0.5px;
+}
+
+
+.style-font {
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.about-me p, .about-me ol {
+    margin-top: 5px;
+}
+
+ol {
+    margin-bottom: 15px;
+}
+
+.expectation {
+    padding-top: 20px;
+}
+
+.contact-me {
+    display: flex;
+    flex-flow: column wrap;
+    border: 5px solid rgb(192, 41, 41);
+    width: 50%;
+    margin: 0px 100px 0px 0px; 
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    padding: 10px 15px 20px 10px;
+    border: 1px solid rgb(228, 217, 217);
+    margin: 5px 20px 90px 20px;
+    border-radius: 25px;
+    font-size: .5rem;
+    text-indent: 30px;
+}
+
+button {
+    margin: 0px 80px;
+    font-size: .2rem;
+}
+input {
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+/*
+input,
+label {
+    margin: .4rem 0;
+}
+*/
+
+@media (max-width: 600px) {
+    .red-boxes {
+        flex-flow: row wrap;
+        width:100%;
+        justify-content: center;
+    }
+    .about-me {
+        justify-content: center;
+        margin: 50px 225px 50px 225px;
+        border-right: 5px;
+    }
+
+    .contact-me {
+        justify-content: center;
+        margin: 0px 225px 50px 225px;
+    }
+}
+
+footer {
+    width: 900px;
+    height: 150px;
+}
