@@ -45,7 +45,6 @@ header{
     flex-flow: row;
 }
 
-
 /* About Me Side*/ 
 
 .about-me {
@@ -62,7 +61,6 @@ header{
     text-align: center;
     margin-top: 0.5px;
 }
-
 
 .style-font {
     font-weight: 900;
@@ -88,7 +86,6 @@ li {
     padding-top: 20px;
 }
 
-
 /* Contact Me Side*/  
 
 .contact-me {
@@ -108,11 +105,13 @@ form {
     border-radius: 25px;
     font-size: .5rem;
 }
+
 button {
     margin-right: 100px;
     margin-left: 70px;
     font-size: .2rem;
 }
+
 input, textarea {
     margin-bottom: 20px;
     margin-right: 50px;
@@ -131,6 +130,7 @@ form p {
         flex-flow: row wrap;
         justify-content: center;
     }
+    
     .about-me {
         justify-content: center;
         margin: 25px 225px 0px 225px;
