@@ -18,7 +18,7 @@ header{
 
 .page-title { 
     padding-bottom: 3px;
-    border-bottom: 3px solid rgb(52, 192, 52);
+    border-bottom: 3px solid #2fb85a;
     text-align: center;
 }
 
@@ -46,15 +46,16 @@ header{
 }
 
 
+/* About Me Side*/ 
+
 .about-me {
     display: flex;
     flex-flow: column wrap; 
     border: 5px solid rgb(192, 41, 41);
-    border-right: 5px;
     width: 50%;
     margin: 0px 0px 0px 100px; 
     text-align: left;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .little-title {
@@ -79,9 +80,16 @@ ol {
     margin-bottom: 15px;
 }
 
+li {
+    text-indent: 5px;
+}
+
 .expectation {
     padding-top: 20px;
 }
+
+
+/* Contact Me Side*/  
 
 .contact-me {
     display: flex;
@@ -91,7 +99,7 @@ ol {
     margin: 0px 100px 0px 0px; 
 }
 
-.form {
+form {
     display: flex;
     flex-flow: column;
     padding: 10px 15px 20px 10px;
@@ -99,42 +107,54 @@ ol {
     margin: 5px 20px 90px 20px;
     border-radius: 25px;
     font-size: .5rem;
-    text-indent: 30px;
 }
-
 button {
-    margin: 0px 80px;
+    margin-right: 100px;
+    margin-left: 70px;
     font-size: .2rem;
 }
-input {
+input, textarea {
     margin-bottom: 20px;
     margin-right: 50px;
+    border: 1px solid rgb(228, 217, 217);
 }
 
-/*
-input,
-label {
-    margin: .4rem 0;
+form p {
+    text-indent: 25px;
+    margin: 0px;
 }
-*/
+
+/* Sreen Width Conditions*/
 
 @media (max-width: 600px) {
     .red-boxes {
         flex-flow: row wrap;
-        width:100%;
         justify-content: center;
     }
     .about-me {
         justify-content: center;
-        margin: 50px 225px 50px 225px;
-        border-right: 5px;
+        margin: 25px 225px 0px 225px;
+        border-bottom: 5px;
     }
 
     .contact-me {
         justify-content: center;
         margin: 0px 225px 50px 225px;
     }
+    
+    form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
+
+@media (min-width: 601px) {
+    .about-me {
+        border-right: 0px;
+    }
+}
+
+/* footer */ 
 
 footer {
     width: 900px;
