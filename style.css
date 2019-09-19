@@ -63,7 +63,7 @@ header{
 }
 
 .style-font {
-    font-weight: 900;
+    font-weight: bold;
     font-style: italic;
     text-decoration: underline;
     margin-bottom: 0px;
@@ -130,7 +130,7 @@ form p {
         flex-flow: row wrap;
         justify-content: center;
     }
-    
+
     .about-me {
         justify-content: center;
         margin: 25px 225px 0px 225px;
